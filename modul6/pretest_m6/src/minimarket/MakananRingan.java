@@ -15,9 +15,9 @@ class Produk {
     
 }
 
-class MakananRingan extends Produk{
+public class MakananRingan extends Produk{
     String rasa;
-    MakananRingan(String nama, double price, String rasa) {
+    public MakananRingan(String nama, double price, String rasa) {
         super(nama, price);//super memanggil Produk(....)
         this.rasa = rasa;
     }
