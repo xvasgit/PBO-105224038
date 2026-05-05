@@ -27,7 +27,7 @@ public class App {
                             while(true){
                                 System.out.print("Masukkan usia (Tiket " + (i+1) + "): ");
                                 usia = input.nextInt();
-                                if (usia == -1) {
+                                if (usia == -1){
                                     System.out.println("Batal darurat, stok dikembalikan");
                                     batalDarurat = true;
                                     break;

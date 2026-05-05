@@ -4,5 +4,6 @@ public class App {
         MakananRingan citato = new MakananRingan("Chitato",1000.0,"Gurih");
 
         citato.tampilkanDetail();
+
     }
 }
