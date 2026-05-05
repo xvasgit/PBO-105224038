@@ -18,10 +18,10 @@ class OverloadScenario{
 public class App {
     public static void main(String[] args) throws Exception {
         Vehicle myVehicle = new Car();
-        // myVehicle.speedUp();
+        myVehicle.speedUp();
         // myVehicle.drift();
 
         OverloadScenario example = new OverloadScenario();
-        example.test(10,5);
+        // example.test(10,5);
     }
 }
