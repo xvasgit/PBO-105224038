@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
         PengirimanDarat kirimdarat = new PengirimanDarat("DRT-001", 50.0, 100.0, "Tronton");
-        PengirimanUdara kirimudara = new PengirimanUdara("DRT-001", 10.0, 800.0, "GA-123", 5000000);
+        PengirimanUdara kirimudara = new PengirimanUdara("UDR-999", 10.0, 800.0, "GA-123", 5000000);
 
         kirimdarat.updateStatus("Sedang di jalan tol Cipali");
         kirimudara.updateStatus("Transit di Bandara Soekarno-Hatta");
