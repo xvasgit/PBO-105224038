@@ -45,5 +45,13 @@ public class App {
         }catch(SksTidakCukupException e){
             System.out.println(e.getMessage());
         }
+
+        //soal 4
+        try{
+            SistemAkademik sistemakademik = new SistemAkademik();
+            sistemakademik.gabungKelas("T-012", 0);
+        }catch(KelasPenuhException e){
+            System.out.println("Error : " + e.getMessage());
+        }
     }
 }
