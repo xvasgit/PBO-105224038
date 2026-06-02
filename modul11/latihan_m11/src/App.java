@@ -30,8 +30,8 @@ public class App {
 
 
         //soal 2
+        Mahasiswa mhs1 = new Mahasiswa();
         try{
-            Mahasiswa mhs1 = new Mahasiswa();
             mhs1.setSksMaksimal(1);
         }catch(IllegalArgumentException e){
             System.out.println(e.getMessage());
@@ -39,6 +39,11 @@ public class App {
         
         
         //soal 3
-        
+        mhs1.sisaSks = 2;//set sisa sks 2
+        try{
+            mhs1.ambilMataKuliah("Kalkulus", 6);
+        }catch(SksTidakCukupException e){
+            System.out.println(e.getMessage());
+        }
     }
 }

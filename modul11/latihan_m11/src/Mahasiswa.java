@@ -12,7 +12,7 @@ public class Mahasiswa {
     public int sisaSks;
     public void ambilMataKuliah(String namaMatkul,int bebanSks){
         if(bebanSks > this.sisaSks){
-            throw new SksTidakCukupException("Sisa SKS tidak cukup!");
+            throw new SksTidakCukupException("Sisa SKS tidak cukup, tidak dapat mengambil mata kuliah " + namaMatkul);
         }
     }
 }
