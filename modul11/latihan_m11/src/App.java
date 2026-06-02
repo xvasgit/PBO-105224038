@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.FileNotFoundException;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
@@ -47,11 +48,19 @@ public class App {
         }
 
         //soal 4
+        SistemAkademik sistemakademik = new SistemAkademik();
         try{
-            SistemAkademik sistemakademik = new SistemAkademik();
             sistemakademik.gabungKelas("T-012", 0);
         }catch(KelasPenuhException e){
             System.out.println("Error : " + e.getMessage());
         }
+
+        //soal 5
+        try{
+            sistemakademik.cetakDokumenKrs("krs.txt");
+        }catch(FileNotFoundException e){
+            System.out.println("Error : nama file harus krs_valid.txt");
+        }
+
     }
 }
